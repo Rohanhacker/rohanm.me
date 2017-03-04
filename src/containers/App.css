@@ -1,0 +1,24 @@
+.background {
+    background: linear-gradient(40deg,#134E5E,transparent 100%),
+                linear-gradient(230deg, #71B280, transparent),
+                #ffa949 url('../../static/img/bg2.jpg') center;
+    background-size: cover;
+    height: 96.9vh;
+    width: 98vw;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.container {
+    overflow: auto;
+    padding: 20px;
+    height: 100%;
+    position: fixed;
+    top: 10px;
+    left: 20px;
+    right: -15px;
+}
+
+.content {
+    min-height: 2000px;
+}
