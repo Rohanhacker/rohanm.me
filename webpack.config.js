@@ -41,7 +41,15 @@ module.exports = {
             'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
         ] 
       },
+      {
+        test: /\.json$/,
+        use: 'json-loader'
+      },
     ],
+  },
+  
+  externals: {
+      'TweenLite': 'TweenLite'
   },
 
   plugins: [

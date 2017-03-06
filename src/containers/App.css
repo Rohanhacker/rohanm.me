@@ -1,24 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Signika');
+
+
+* {
+    box-sizing: border-box;
+}
+
 .background {
-    background: linear-gradient(40deg,#134E5E,transparent 100%),
-                linear-gradient(230deg, #71B280, transparent),
-                #ffa949 url('../../static/img/bg2.jpg') center;
-    background-size: cover;
-    height: 96.9vh;
-    width: 98vw;
-    margin: 10px;
-    overflow: hidden;
+    background: linear-gradient(40deg,#1F1C2C,transparent 100%),
+                linear-gradient(230deg, #928DAB, transparent),
+                #ffa949 url('../../static/img/bg.jpg') center;
+    background-size: cover; 
+    height: calc(100vh - 10px);
+    width: calc(100vw - 10px);
+    border: 10px solid white;
 }
 
 .container {
     overflow: auto;
     padding: 20px;
-    height: 100%;
+    height: calc(100% - 30px);
+    width: calc(100% - 20px);
     position: fixed;
     top: 10px;
     left: 20px;
-    right: -15px;
+}
+
+.highlight {
+    color: mediumturquoise;
 }
 
 .content {
-    min-height: 2000px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
 }
+
+
+.heading {
+    overflow: hidden;
+    color: darkturquoise;
+    font-family: 'Signika', sans-serif;
+    font-weight: bold;
+    font-size: 85px;
+    margin-left: 30px;  
+    animation-name: heading;
+    animation-duration: 0.4s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+.about {
+    margin-top: 105px;
+    overflow: hidden;
+    margin-left: 50px; 
+    color: white;
+    font-family: 'Signika', sans-serif;
+    font-weight: 300;
+    width: 45%;
+    font-size: 50px;
+}
+
+.staybold {
+    overflow: hidden;
+    margin-left: 50px; 
+    color: mediumturquoise;
+    font-family: 'Signika', sans-serif;
+    font-weight: 200;
+    width: 57%;
+    font-size: 54px;
+}
+
+@keyframes heading {
+    from {
+        margin-top: 8%;
+        opacity: 0;
+    }
+    to {
+        margin-top: 14%;
+        opacity: 1;
+    }
+}
+
+
+.box {
+    position: relative;    
+}
+
+.container::-webkit-scrollbar-track
+{
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+	border-radius: 10px;
+}
+
+.container::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+.container::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-image: -webkit-gradient(linear,
+									   left bottom,
+									   left top,
+									   color-stop(0.44, #908CA7),
+									   color-stop(0.72, #565462),
+									   color-stop(0.86, #747281));
+}
+
