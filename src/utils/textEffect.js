@@ -5,7 +5,9 @@ import shuffle from './shuffle'
 
 export default function transformText(node, text) {
   try {
-    TweenLite.to(node, 0.9, {text: text, ease: Quint.easeOut, overwrite: 'all'})
+    if(node !== undefined) {
+      TweenLite.to(node, 0.9, {text: text, ease: Quint.easeOut, overwrite: 'all'})
+    }
   } catch(e) {}
 }
 

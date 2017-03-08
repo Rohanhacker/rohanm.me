@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import styles from './Navigation.css'
 import className from 'classnames';
+import {rollText} from '../../utils/textEffect'
+import { Link } from 'react-router-dom'
 
 class Navigation extends Component {
   constructor(props) {
@@ -20,6 +22,13 @@ class Navigation extends Component {
       })
     }
   }
+  handleover(e) {
+    try {
+      rollText(e.target)
+    } catch(e) {
+      
+    }
+  }
   render() {
     return (
         <div className={styles.nav} onClick={::this.handleClick}>
@@ -30,10 +39,10 @@ class Navigation extends Component {
             </div>
             <div>
                 <ul className={className(styles.mainNav, this.state.on ? styles.shownav : undefined)} ref='mainNav'>
-                <li>Home</li>
-                <li>About</li>
-                <li>Projects</li>
-                <li>Contact</li>
+                <li><Link to='/' onMouseOver={::this.handleover} >Home</Link></li>
+                <li><Link to='/about' onMouseOver={::this.handleover} > About </Link></li>
+                <li><Link to='/' onMouseOver={::this.handleover} > Projects </Link></li>
+                <li><Link to='/' onMouseOver={::this.handleover} > Contact </Link></li>
                 </ul>
             </div>
         </div>

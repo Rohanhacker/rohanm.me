@@ -12,6 +12,15 @@
     order: 1;
 }
 
+.mainNav a {
+    color: white;
+    text-decoration: none;
+}
+
+.mainNav a:hover {
+    color: turquoise;
+}
+
 .one, .two, .three {
     width: 100%;
     height: 5px;

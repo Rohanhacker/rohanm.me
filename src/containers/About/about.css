@@ -8,11 +8,12 @@
 .background {
     background: linear-gradient(40deg,#1F1C2C,transparent 100%),
                 linear-gradient(230deg, #928DAB, transparent),
-                #ffa949 url('../../../static/img/bg.jpg') center;
+                #ffa949 url('../../../static/img/bgabout.jpg') center;
     background-size: cover; 
     height: calc(100vh - 10px);
     width: calc(100vw - 10px);
     border: 10px solid white;
+    transition: filter 1s ease;
 }
 
 .container {
@@ -25,9 +26,6 @@
     left: 20px;
 }
 
-.highlight {
-    color: mediumturquoise;
-}
 
 .content {
     position: relative;
@@ -42,7 +40,7 @@
     font-family: 'Signika', sans-serif;
     font-weight: bold;
     font-size: 85px;
-    margin-left: 30px;  
+    margin: auto;
     animation-name: heading;
     animation-duration: 0.4s;
     animation-timing-function: ease;
@@ -56,19 +54,38 @@
     color: white;
     font-family: 'Signika', sans-serif;
     font-weight: 300;
-    width: 45%;
-    font-size: 50px;
+    width: 80%;
+    font-size: 30px;
 }
 
-.staybold {
-    overflow: hidden;
-    margin-left: 50px; 
-    color: mediumturquoise;
-    font-family: 'Signika', sans-serif;
-    font-weight: 200;
-    width: 57%;
-    font-size: 54px;
+.internships {
+    display: flex;
+    margin: 20px;
+    flex-wrap: wrap;
 }
+
+.internships img {
+    width: 150px;
+    height: 150px;
+    margin-right: 40px;
+}
+
+.internAbout {
+    font-size: 20px;
+}
+
+.internAbout h3 {
+    color: darkturquoise;
+}
+.internAbout h5 {
+    margin: 2px;
+}
+
+.internAbout p {
+    margin-top: 20px;
+}
+
+
 
 @keyframes heading {
     from {
@@ -79,6 +96,15 @@
         margin-top: 14%;
         opacity: 1;
     }
+}
+
+h2 {
+    margin: 0;
+}
+
+.skills {
+    font-size: 20px;
+    margin: 10px;
 }
 
 
@@ -109,3 +135,6 @@
 									   color-stop(0.72, #565462),
 									   color-stop(0.86, #747281));
 }
+
+
+

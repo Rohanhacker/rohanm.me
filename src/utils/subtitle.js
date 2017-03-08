@@ -37,15 +37,27 @@ class Claims extends Component {
   }
 
   cycle1() {
-    transformText(this.refs.word1, this.getListItem())
+    try {
+      transformText(this.refs.word1, this.getListItem())
+    } catch(e) {
+      console.log(e);
+    }
   }
 
   cycle2() {
-    transformText(this.refs.word2, this.getListItem())
+    try {
+      transformText(this.refs.word2, this.getListItem())
+    } catch(e) {
+      console.log(e);
+    }
   }
 
   cycle3() {
-    transformText(this.refs.word3, this.getListItem())
+    try {
+      transformText(this.refs.word3, this.getListItem())
+    } catch(e) {
+      console.log(e);
+    }
   }
 
   render() {

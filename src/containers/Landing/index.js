@@ -60,8 +60,7 @@ class App extends Component {
   }
   handleScroll(event) {
     let height = this.refs.heading.getBoundingClientRect().top
-    console.log(height)
-    if(height < 100) {
+    if(height < 50) {
       this.refs.background.style.filter = 'blur(2px)'
     } else {
       this.refs.background.style.filter = 'blur(0px)'
