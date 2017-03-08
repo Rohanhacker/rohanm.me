@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
-import styles from './App.css'
-import Subhead from '../utils/subtitle'
+import styles from './Landing.css'
+import Subhead from '../../utils/subtitle'
 import superb from 'superb'
-import transformText from '../utils/textEffect'
+import transformText from '../../utils/textEffect'
+import Navigation from '../Navigation/'
+import className from 'classnames';
 
 class App extends Component {
   constructor(props) {
@@ -10,6 +12,9 @@ class App extends Component {
     this.handleScroll = this.handleScroll.bind(this)
     let date = new Date()
     let day = date.getDay()
+    this.state = {
+      on: false,
+    }
     switch(day) {
       case 0:
         this.day = 'Sunday'
@@ -62,11 +67,23 @@ class App extends Component {
       this.refs.background.style.filter = 'blur(0px)'
     }
   }
+  handleClick(e) {
+    if(!this.state.on) {
+      this.setState({
+        on: true
+      })
+    } else {
+      this.setState({
+        on: false
+      })
+    }
+  }
   render() {
     return (
       <div>
         <div className={styles.background} ref='background'></div>
         <div className={styles.container} ref='content'>
+          <Navigation />
           <div className={styles.content}>
             <span className={styles.heading} ref='heading'>
               Rohan Malhotra

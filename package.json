@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "babel-eslint": "^7.1.1",
+    "classnames": "^2.2.5",
     "eslint": "^3.17.0",
     "eslint-plugin-react": "^6.10.0",
     "gsap": "^1.19.1",
