@@ -42,7 +42,7 @@ class Navigation extends Component {
                 <li><Link to='/' onMouseOver={::this.handleover} >Home</Link></li>
                 <li><Link to='/about' onMouseOver={::this.handleover} > About </Link></li>
                 <li><Link to='/' onMouseOver={::this.handleover} > Projects </Link></li>
-                <li><Link to='/' onMouseOver={::this.handleover} > Contact </Link></li>
+                <li><Link to='/contact' onMouseOver={::this.handleover} > Contact </Link></li>
                 </ul>
             </div>
         </div>

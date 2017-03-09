@@ -5,6 +5,7 @@ import {
 } from 'react-router-dom'
 import Landing from '../containers/Landing/'
 import About from '../containers/About/'
+import Contact from '../containers/Contact/'
 
 class Main extends Component {
     render() {
@@ -14,7 +15,7 @@ class Main extends Component {
                     <Route exact path='/' component={Landing} ></Route>
                     <Route path='/about' component={About} ></Route>
                     <Route path='/projects' component={Landing} ></Route>
-                    <Route path='/contact' component={Landing} ></Route>
+                    <Route path='/contact' component={Contact} ></Route>
                 </div>
             </Router>
         )
