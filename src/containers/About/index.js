@@ -51,7 +51,7 @@ class About extends Component {
             </p>
             <h2>Internships :</h2>
             <div className={styles.internships}>
-                <img src="../../../static/img/youstart.png" alt="Youstart"/>
+                <img src="http://res.cloudinary.com/www-rohanm-com/image/upload/v1489134174/youstart_mlu2py.png" alt="Youstart"/>
                 <div className={styles.internAbout}>
                     <h3>Youstart Labs</h3>
                     <h5>Jan 2017 - Currently</h5>
@@ -59,7 +59,7 @@ class About extends Component {
                 </div>
             </div>
             <div className={styles.internships}>
-                <img src="../../../static/img/celebal.png" alt="Celebal"/>
+                <img src="http://res.cloudinary.com/www-rohanm-com/image/upload/v1489134171/celebal_noerpi.png" alt="Celebal"/>
                 <div className={styles.internAbout}>
                     <h3>Celebal Corp</h3>
                     <h5>Sept 2016 - Dec 2016</h5>

@@ -8,7 +8,7 @@
 .background {
     background: linear-gradient(40deg,#1F1C2C,transparent 100%),
                 linear-gradient(230deg, #928DAB, transparent),
-                #ffa949 url('../../../static/img/bg.jpg') center;
+                #ffa949 url('http://res.cloudinary.com/www-rohanm-com/image/upload/v1489134157/bg_q27nqt.jpg') center;
     background-size: cover; 
     height: calc(100vh - 10px);
     width: calc(100vw - 10px);
@@ -50,7 +50,7 @@
 }
 
 .about {
-    margin-top: 105px;
+    margin-top: 10%;
     overflow: hidden;
     margin-left: 50px; 
     color: white;

@@ -5,9 +5,17 @@ import styles from './contact.css'
 import Footer from '../../utils/footer'
 import { Form, FormControl, FormGroup, Col, ControlLabel, Checkbox, Button } from 'react-bootstrap'
 
+
+
+
 class Contact extends Component {
   constructor(props) {
     super(props)
+    this.state = {
+      email: '',
+      subject: '',
+      message: ''
+    }
     this.handleScroll = this.handleScroll.bind(this)
   }
   componentDidMount() {
@@ -35,15 +43,39 @@ class Contact extends Component {
       })
     }
   }
+  handleSubmit(e) {
+    e.preventDefault()
+    this.setState({
+      email: '',
+      subject: '',
+      message: ''
+    })
+    alert("sorry I don't have a server right now also I am out of my firebase limits so no backend for now mail me instead hello@rohanm.com")
+  }
+  handleEmailChange(e) {
+    this.setState({
+      email: e.target.value
+    })
+  }
+  handleSubjectChange(e) {
+    this.setState({
+      subject: e.target.value
+    })
+  }
+  handleMessageChange(e) {
+    this.setState({
+      message: e.target.value
+    })
+  }
   render() {
     const FormInstance = (
-      <Form horizontal>
+      <Form horizontal onSubmit={::this.handleSubmit}>
         <FormGroup controlId="formHorizontalEmail">
           <Col componentClass={ControlLabel} sm={2}>
             Email
           </Col>
           <Col sm={8}>
-            <FormControl type="email" placeholder="Email" />
+            <FormControl type="email" placeholder="Email" value={this.state.email} onChange={::this.handleEmailChange} />
           </Col>
         </FormGroup>
 
@@ -52,7 +84,7 @@ class Contact extends Component {
             Subject
           </Col>
           <Col sm={8}>
-            <FormControl type="text" placeholder="Subject" />
+            <FormControl type="text" placeholder="Subject" value={this.state.subject} onChange={::this.handleSubjectChange} />
           </Col>
         </FormGroup>
         <FormGroup controlId="formControlsTextarea">
@@ -60,7 +92,7 @@ class Contact extends Component {
             Message
           </Col>
           <Col sm={8}>
-            <FormControl componentClass="textarea" placeholder="message" />
+            <FormControl componentClass="textarea" placeholder="message" value={this.state.message} onChange={::this.handleMessageChange} />
           </Col>
         </FormGroup>
         <FormGroup>

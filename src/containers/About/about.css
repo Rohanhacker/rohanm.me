@@ -8,7 +8,7 @@
 .background {
     background: linear-gradient(40deg,#1F1C2C,transparent 100%),
                 linear-gradient(230deg, #928DAB, transparent),
-                #ffa949 url('../../../static/img/bgabout.jpg') center;
+                #ffa949 url('http://res.cloudinary.com/www-rohanm-com/image/upload/v1489134159/bgabout_dbbkaq.jpg') center;
     background-size: cover; 
     height: calc(100vh - 10px);
     width: calc(100vw - 10px);
@@ -41,6 +41,7 @@
     font-weight: bold;
     font-size: 85px;
     margin: auto;
+    margin-bottom: 50vh;
     animation-name: heading;
     animation-duration: 0.4s;
     animation-timing-function: ease;

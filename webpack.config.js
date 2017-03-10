@@ -62,7 +62,6 @@ module.exports = {
   externals: {
       'TweenLite': 'TweenLite'
   },
-
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NamedModulesPlugin()

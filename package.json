@@ -18,11 +18,14 @@
     "copyfiles": "^1.2.0",
     "gsap": "^1.19.1",
     "normalize-css": "^2.3.1",
+    "preact": "^7.2.0",
+    "preact-compat": "^3.14.0",
     "react": "^15.4.2",
     "react-bootstrap": "^0.30.8",
     "react-dom": "^15.4.2",
     "react-router-dom": "next",
     "rimraf": "^2.6.1",
+    "sendgrid": "^4.7.1",
     "superb": "^1.3.0"
   },
   "devDependencies": {
