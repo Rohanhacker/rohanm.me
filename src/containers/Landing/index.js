@@ -4,6 +4,7 @@ import Subhead from '../../utils/subtitle'
 import superb from 'superb'
 import transformText from '../../utils/textEffect'
 import Navigation from '../Navigation/'
+import Footer from '../../utils/footer'
 import className from 'classnames';
 
 class App extends Component {
@@ -108,6 +109,7 @@ class App extends Component {
               {` ${this.day}`}
             </span>
           </div>
+          <Footer />
         </div>
       </div>
     )

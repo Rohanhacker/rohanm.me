@@ -6,6 +6,7 @@ import {
 import Landing from '../containers/Landing/'
 import About from '../containers/About/'
 import Contact from '../containers/Contact/'
+import Projects from '../containers/Projects/'
 
 class Main extends Component {
     render() {
@@ -14,7 +15,7 @@ class Main extends Component {
                 <div>
                     <Route exact path='/' component={Landing} ></Route>
                     <Route path='/about' component={About} ></Route>
-                    <Route path='/projects' component={Landing} ></Route>
+                    <Route path='/projects' component={Projects} ></Route>
                     <Route path='/contact' component={Contact} ></Route>
                 </div>
             </Router>

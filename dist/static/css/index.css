@@ -1,0 +1,16 @@
+.form-horizontal {
+    margin: 20% 5% 5%;
+    color: white;
+}
+
+.form-horizontal textarea {
+    height: 200px;
+}
+
+.btn-primary {
+    background-color: darkturquoise;
+}
+
+.panel {
+    overflow: hidden;
+}

@@ -41,7 +41,7 @@ class Navigation extends Component {
                 <ul className={className(styles.mainNav, this.state.on ? styles.shownav : undefined)} ref='mainNav'>
                 <li><Link to='/' onMouseOver={::this.handleover} >Home</Link></li>
                 <li><Link to='/about' onMouseOver={::this.handleover} > About </Link></li>
-                <li><Link to='/' onMouseOver={::this.handleover} > Projects </Link></li>
+                <li><Link to='/projects' onMouseOver={::this.handleover} > Projects </Link></li>
                 <li><Link to='/contact' onMouseOver={::this.handleover} > Contact </Link></li>
                 </ul>
             </div>

@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Navigation from '../Navigation/'
 import className from 'classnames'
 import styles from './contact.css'
+import Footer from '../../utils/footer'
 import { Form, FormControl, FormGroup, Col, ControlLabel, Checkbox, Button } from 'react-bootstrap'
 
 class Contact extends Component {
@@ -82,6 +83,7 @@ class Contact extends Component {
             </span>
             { FormInstance }
           </div>
+          <Footer />
         </div>
       </div>
     )

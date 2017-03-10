@@ -1,0 +1,23 @@
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    margin: 30px 10px 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+
+.nav li {
+    list-style: none;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.nav li a {
+    color: white;
+}
+
+.nav li a:hover {
+    color: darkturquoise;
+}

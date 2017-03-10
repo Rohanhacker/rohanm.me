@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Navigation from '../Navigation/'
+import Footer from '../../utils/footer'
 import className from 'classnames'
 import styles from './about.css'
 
@@ -70,6 +71,7 @@ class About extends Component {
                 HTML, CSS, JAVASCRIPT (and friends), C/C++, Java, Python, MongoDB, SQL
             </span>
           </div>
+          <Footer />
         </div>
       </div>
     )
