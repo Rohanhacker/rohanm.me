@@ -20,7 +20,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.jsx?$/,
+        test: /\.jsx?/,
         use: [
           'babel-loader',
         ],
@@ -72,5 +72,8 @@ module.exports = {
     port: 3000,
     historyApiFallback: true,
     hot: true,
+  },
+  resolve: {
+    extensions: ['.js', '.jsx'],
   },
 };

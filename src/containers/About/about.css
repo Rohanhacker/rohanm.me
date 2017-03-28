@@ -8,10 +8,10 @@
 .background {
     background: linear-gradient(40deg,#1F1C2C,transparent 100%),
                 linear-gradient(230deg, #928DAB, transparent),
-                #ffa949 url('http://res.cloudinary.com/www-rohanm-com/image/upload/v1489134159/bgabout_dbbkaq.jpg') center;
+                #ffa949 url('http://res.cloudinary.com/www-rohanm-com/image/upload/c_scale,q_auto:low,w_1456/v1489134159/bgabout_dbbkaq.jpg') center;
     background-size: cover; 
-    height: calc(100vh - 10px);
-    width: calc(100vw - 10px);
+    height: calc(100vh);
+    width: calc(100vw);
     border: 10px solid white;
     transition: filter 1s ease;
 }
@@ -19,7 +19,7 @@
 .container {
     overflow-y: auto;
     padding: 20px;
-    height: calc(100% - 30px);
+    height: calc(100% - 20px);
     width: calc(100% - 20px);
     position: fixed;
     top: 10px;
@@ -117,12 +117,12 @@ h2 {
 {
 	box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 	background-color: #F5F5F5;
-	border-radius: 10px;
+	border-radius: 5px;
 }
 
 .container::-webkit-scrollbar
 {
-	width: 10px;
+	width: 8px;
 	background-color: #F5F5F5;
 }
 
@@ -136,6 +136,4 @@ h2 {
 									   color-stop(0.72, #565462),
 									   color-stop(0.86, #747281));
 }
-
-
 

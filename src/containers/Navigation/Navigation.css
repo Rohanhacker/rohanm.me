@@ -27,7 +27,7 @@
     height: 5px;
     margin-top: 5px;
     background-color: white;
-    transition: all 0.1s ease;
+    transition: all 0.2s linear;
 }
 
 
@@ -50,7 +50,7 @@
     font-size: 24px;
     margin: 5px;
     transform: translateX(200%);
-    transition: transform 0.1s ease-out;
+    transition: transform 0.2s ease;
 }
 
 .shownav {

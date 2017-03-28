@@ -61,7 +61,6 @@ class App extends Component {
   }
   handleScroll(event) {
     let height = this.refs.heading.getBoundingClientRect().top
-    console.log(this.refs.heading.getBoundingClientRect())
     if(height < 50) {
       this.refs.background.style.filter = 'blur(2px)'
     } else {
@@ -89,7 +88,7 @@ class App extends Component {
             <span className={styles.heading} ref='heading'>
               Rohan Malhotra
             </span>
-            <Subhead words={['Coder','Designer','Wizard','Indian','Geek','Startup Enthusiast','Web Developer','Student','Casual Nerd', 'Developer', 'Casual Pentester']} />
+            <Subhead words={['Coder','Designer','Wizard','Indian','Geek','Startup Enthusiast','Magna Fanatic','Student','Casual Nerd', 'Developer', 'Pentester']} />
           </div>
           <div className={styles.about}>
             <p>
