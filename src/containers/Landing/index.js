@@ -88,7 +88,7 @@ class App extends Component {
             <span className={styles.heading} ref='heading'>
               Rohan Malhotra
             </span>
-            <Subhead words={['Coder','Designer','Wizard','Indian','Geek','Startup Enthusiast','Magna Fanatic','Student','Casual Nerd', 'Developer', 'Pentester']} />
+            <Subhead words={['Coder','Designer','Wizard','Indian','Geek','Startup Enthusiast','Magna Fanatic','Casual Nerd', 'Developer', 'Pentester']} />
           </div>
           <div className={styles.about}>
             <p>
