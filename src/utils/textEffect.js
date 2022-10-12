@@ -37,7 +37,7 @@ export function rollText(node) {
     TweenLite.to(node, duration, {text: tmpText, ease: Linear.easeNone, overwrite: 'all', onComplete: function() {
       TweenLite.to(node, duration, {text: originalText, ease: Linear.easeNone, overwrite: 'all', onComplete: function() {
         node.style.width = ''
-        node.style.textAlign = ''
+        node.style.textAlign = ""
         node._isRollingText = false
       }})
     }})
